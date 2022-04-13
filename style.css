@@ -1,0 +1,97 @@
+body {
+ background-color: #00bfff;
+}
+
+h1.titlecolor{
+ background-color: #cdefff;
+ margin:0;
+ padding:0;
+}
+
+div.fav{
+ background-color: #cdefff;
+ margin:0;
+ padding:0;
+}
+
+div#users{
+ background-color: #cdefff;
+ margin:0;
+ padding:0;
+}
+
+
+
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th,td {
+    background-color: #cdefff;
+    border: solid 1px;   /* 枠線指定 */
+}
+
+.checkbox{
+   background-color: #cdefff;
+   border: 0px none;
+}
+
+/*checkbox*/
+th.A0{
+  width:15px;
+}
+
+/*ジャンル*/
+th.A1 {
+   width: 10%;
+}
+
+/*曲名*/
+th.A2 {
+   width: 20%;
+}
+
+/*内容*/
+th.A3 {
+   width: 40%;
+}
+
+
+/*ゲームタイトル*/
+th.A4 {
+  width: 15%;
+}
+
+
+/*配信日*/
+th.A5 {
+   width: 10%;
+}
+
+
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+
+button.btn{
+ text-align: left;
+ width: 100%;
+ border: none;
+ background-color: #cdefff;
+}
+
+.title{
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
