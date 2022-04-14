@@ -1,9 +1,50 @@
-body {
+
+/*PC表示*/
+@media screen and (min-width:480px){
+ 
+ body {
  font-size : small;
  margin:0px;
-
  background-color: #ff69b4; 
+ }
+
+ div.fav{
+  font-family:"Yu Gothic"; 
+  margin:0;
+  padding:0;
+  background-image:url('/image.jpg');
+  background-position:center center;
+  background-size:100% auto;
+  background-repeat: no-repeat;
+  opacity:0.9;  
+ }
+ 
 }
+
+/*スマホ表示*/
+@media screen and (max-width:479px){
+ body{
+  width: 360px;
+  font-size : small;
+  margin:0px;
+  background-color: #ff69b4; 
+ }
+ 
+div.fav{
+ font-family:"Yu Gothic"; 
+ margin:0;
+ padding:0;
+ background-image:url('/image.jpg');
+ background-position:center center;
+ background-size:360px auto;
+ background-repeat: no-repeat;
+  opacity:0.9;  
+}
+ 
+}
+
+
+
 
 h1#strcolor1{
  margin:0;
@@ -23,42 +64,6 @@ span#strcolor3{
 }
 
 
-@media screen and (min-width:480px){
-div.fav{
- font-family:"Yu Gothic"; 
- margin:0;
- padding:0;
- background-image:url('/image.jpg');
- background-position:center center;
- background-size:100% auto;
- background-repeat: no-repeat;
- opacity:0.9;  
-}
-}
-
-
-
-
-@media screen and (max-width:479px){
-div.fav{
- font-family:"Yu Gothic"; 
- margin:0;
- padding:0;
- background-image:url('/image.jpg');
- background-position:center center;
- background-size:360px auto;
- background-repeat: no-repeat;
-  opacity:0.9;  
-}
-}
-
-
-/*スマホ表示*/
-@media screen and (max-width:479px){
- body{
-  width: 360px;
- }
-}
 
 div#users{
  font-family:"Yu Gothic";
