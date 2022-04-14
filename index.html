@@ -24,7 +24,7 @@
 
 <body>
   <div class="fav">
-   <span id="image"><img src="/image.jpg"></span>
+   <img src="/image.jpg" id="image">
    <h1 id="strcolor1">夜想といき 配信まとめ</h1>
 　 <span id="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
    <button class="remove" id="remove" onclick="favremove()">お気に入り解除</button></br>
@@ -2138,12 +2138,13 @@ function categorysong(){
    document.getElementsByClassName('A4')[i].style.display = 'none';
    document.getElementsByClassName('A5')[i].style.display = '';
   } else {
-  for (var i = 0; i < ColumnCounts ; i++){
-   document.getElementsByClassName('A1')[i].style.display = 'none';
-   document.getElementsByClassName('A2')[i].style.display = 'none';
-   document.getElementsByClassName('A3')[i].style.display = 'none';
-   document.getElementsByClassName('A4')[i].style.display = 'none';
-   document.getElementsByClassName('A5')[i].style.display = 'none';
+   for (var i = 0; i < ColumnCounts ; i++){
+    document.getElementsByClassName('A1')[i].style.display = 'none';
+    document.getElementsByClassName('A2')[i].style.display = 'none';
+    document.getElementsByClassName('A3')[i].style.display = 'none';
+    document.getElementsByClassName('A4')[i].style.display = 'none';
+    document.getElementsByClassName('A5')[i].style.display = 'none';
+   }
   }
  }
 }
@@ -2157,12 +2158,13 @@ function categoryasmr(){
    document.getElementsByClassName('A4')[i].style.display = 'none';
    document.getElementsByClassName('A5')[i].style.display = '';
   } else {
-  for (var i = 0; i < ColumnCounts ; i++){
-   document.getElementsByClassName('A1')[i].style.display = 'none';
-   document.getElementsByClassName('A2')[i].style.display = 'none';
-   document.getElementsByClassName('A3')[i].style.display = 'none';
-   document.getElementsByClassName('A4')[i].style.display = 'none';
-   document.getElementsByClassName('A5')[i].style.display = 'none';
+   for (var i = 0; i < ColumnCounts ; i++){
+    document.getElementsByClassName('A1')[i].style.display = 'none';
+    document.getElementsByClassName('A2')[i].style.display = 'none';
+    document.getElementsByClassName('A3')[i].style.display = 'none';
+    document.getElementsByClassName('A4')[i].style.display = 'none';
+    document.getElementsByClassName('A5')[i].style.display = 'none';
+   }
   }
  }
 }
@@ -2176,12 +2178,13 @@ function categorygame(){
    document.getElementsByClassName('A4')[i].style.display = '';
    document.getElementsByClassName('A5')[i].style.display = '';
   } else {
-  for (var i = 0; i < ColumnCounts ; i++){
-   document.getElementsByClassName('A1')[i].style.display = 'none';
-   document.getElementsByClassName('A2')[i].style.display = 'none';
-   document.getElementsByClassName('A3')[i].style.display = 'none';
-   document.getElementsByClassName('A4')[i].style.display = '';
-   document.getElementsByClassName('A5')[i].style.display = 'none';
+   for (var i = 0; i < ColumnCounts ; i++){
+    document.getElementsByClassName('A1')[i].style.display = 'none';
+    document.getElementsByClassName('A2')[i].style.display = 'none';
+    document.getElementsByClassName('A3')[i].style.display = 'none';
+    document.getElementsByClassName('A4')[i].style.display = '';
+    document.getElementsByClassName('A5')[i].style.display = 'none';
+   }
   }
  }
 }
