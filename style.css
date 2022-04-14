@@ -1,26 +1,18 @@
 body {
  font-size : small;
- margin:0px
+ margin:0px;
  background-color: #ff69b4; 
 }
 
 div.fav{
  font-family:"Yu Gothic"; 
- position:relative;
  margin:0;
  padding:0;
+ background-image:url('/image.jpg');
+ background-position:center center;
+ background-size:auto 115px;
 }
 
-img#image{
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- margin: auto;
- width: 360px;
- height: 115px;
-}
 
 /*スマホ表示*/
 @media screen and (max-width:479px){
