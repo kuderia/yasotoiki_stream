@@ -55,7 +55,7 @@ div.fav{
 
 /*スマホ表示*/
 @media screen and (max-width:479px){
- #body{
+ body{
   width: 360px;
  }
 }
