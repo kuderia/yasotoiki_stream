@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>夜想といき 配信まとめ</title>
-    <link rel="stylesheet" href="/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>夜想といき 配信まとめ</title>
+ <link rel="stylesheet" href="/style.css">
 </head>
 
 <style>
- #users{
+ #users {
   height:80vh;
   overflow-y: scroll;
  }
@@ -23,36 +23,37 @@
 </style>
 
 <body>
-<div id="body">
- <h1 class="titlecolor">夜想といき 配信まとめ</h1>
- <div class="fav">　<input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り
-<button class="remove" id="remove" onclick="favremove()">お気に入り解除</button></br>
- 
- <div id="category-title">　ジャンル選択
-  <select name="category" id="category">
-   <option hidden>ジャンル選択</option>
-   <option value="non">選択なし</option>
-   <option value="sing">歌枠/歌ってみた</option>
-   <option value="ASMR">ASMR</option>
-   <option value="talk">雑談</option>
-   <option value="game">ゲーム</option>
-   <option value="exclusive">メン限</option>
-   <option value="situation">シチュエーションボイス</option>
-   <option value="song">歌ってみた</option>
-  </select>　<button id="genrereset" onclick="genrereset()">選択解除</button>
- </div>
-
- <div id="category-second-title">
- <select name="category-second" id="category-second">
-   <option value="">選択してください</option>
- </select>
- </div>
-
- 
+  <div class="fav">
+   <span id="image"><img src="/image.jpg"></span>
+   <h1 id="strcolor1">夜想といき 配信まとめ</h1>
+　 <span id="strcolor2"><input type="checkbox" onchange="favdisplay()" class="checkboxA" id="checkboxA"> お気に入り</span>
+   <button class="remove" id="remove" onclick="favremove()">お気に入り解除</button></br>
+   
+   
+   <div id="category-title"><span id="strcolor3">　ジャンル選択</span>
+    <select name="category" id="category">
+     <option hidden>ジャンル選択</option>
+     <option value="non">選択なし</option>
+     <option value="sing">歌枠/歌ってみた</option>
+     <option value="ASMR">ASMR</option>
+     <option value="talk">雑談</option>
+     <option value="game">ゲーム</option>
+     <option value="exclusive">メン限</option>
+     <option value="situation">シチュエーションボイス</option>
+     <option value="song">歌ってみた</option>
+    </select>　<button id="genrereset" onclick="genrereset()">選択解除</button>
+   
+   
+   <div id="category-second-title">
+    <select name="category-second" id="category-second">
+     <option value="">選択してください</option>
+    </select>
+   </div>
+  </div>
 
    <div id="users">
-   　<input type ="search" class="search" id="search" placeholder="曲名を入力">
-
+    <input type ="search" class="search" id="search" placeholder="曲名を入力">
+    
     <table>
      <thead>
       <tr>
@@ -65,17 +66,17 @@
        <th class="A6" data-sort="title">配信タイトル</th>
       </tr>
      </thead>
-    
+     
      <tbody class="list">
 <!--歌枠-->
-
+       
        <tr class="len singA" id="B1-1">
          <td class ="checkbox"><input type="checkbox" onclick="fav();" class="checkbox_check" id="1-1"></td>
          <td class="genre A1">歌枠</td>
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/13</td>
+         <td class="date A5">2021/11/13</td>
          <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -85,7 +86,7 @@
          <td class="songtitle A2">アンパンマンマーチ</td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/13</td>
+         <td class="date A5">2021/11/13</td>
          <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=11m59s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -95,7 +96,7 @@
          <td class="songtitle A2">ヴァンパイア</td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/13</td>
+         <td class="date A5">2021/11/13</td>
          <td class="title" id="A1"><button class="btn" onclick="window.open('https://youtu.be/6WKo6BXuqTA?t=17m33s', 'blank')">【歌枠/4000人感謝】初歌枠♡たのしく盛り上がろぉ【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -106,7 +107,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/2</td>
+         <td class="date A5">2022/4/2</td>
          <td class="title" id="A1"><button class="btn" onclick="window.open('https://www.youtube.com/watch?v=GfZBMyG-oK8', 'blank')">【歌枠/KARAOKE】４月最初の歌枠🌸春歌うたお🌸Singing stream【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -135,7 +136,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/5</td>
+         <td class="date A5">2021/11/5</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/OiMmYgD4KOU', 'blank')">【安眠ASMR】お耳さわさわ♡ふーふー♡あまあま囁き【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -145,7 +146,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3">耳はむ / 耳舐め / リップ音 </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/8</td>
+         <td class="date A5">2021/11/8</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/hwy-E5F88-0', 'blank')">【初 耳舐め/ASMR】一緒にはじめて体験しよ♡耳はむ /囁き/リップ音【新人Vtuber/夜想といき】</button></td>
        </tr>
   
@@ -155,7 +156,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 手袋</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/10</td>
+         <td class="date A5">2021/11/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/JzL-jH3CW1E', 'blank')">【睡眠誘導/ASMR】三種類のおててで安眠に誘う🤍癒し囁き吐息【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -165,7 +166,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/11</td>
+         <td class="date A5">2021/11/11</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/cXI06_oqrQQ', 'blank')">【ASMR/睡眠誘導】耳かきでスッキリ安眠しよ♡囁き吐息耳ふー【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -175,7 +176,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">飴 / 吐息 / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/15</td>
+         <td class="date A5">2021/11/15</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/KhFhY_U4eHs', 'blank')">【耳舐め(飴)/ASMR】大好きなあなたのお耳をたっぷり癒しちゃう♡囁き吐息リップ音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -185,7 +186,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">耳かき /リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/17</td>
+         <td class="date A5">2021/11/17</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/ujBgtoH3JmY', 'blank')">【ASMR】ほろ酔い彼女が甘々に癒しちゃう♡囁き/耳かき/リップ音/心音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -195,7 +196,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/20</td>
+         <td class="date A5">2021/11/20</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/9aNTeXZ9yzQ', 'blank')">【ASMR/耳舐め】じっくり攻める耳奥舐め丁寧に癒してあげる♡吐息囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -205,7 +206,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / シャンプー</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/26</td>
+         <td class="date A5">2021/11/26</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Zf1EYttR77c', 'blank')">【ASMR/睡眠誘導】ゴシゴシ♡あわあわスッキリ気分爽快♡癒されるシャンプー/タオル音/囁き/オイルマッサージ【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -215,7 +216,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">心音 / 添い寝</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/28</td>
+         <td class="date A5">2021/11/28</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/lsWYwxLxPoo', 'blank')">【ASMR/心音】密着添い寝で安眠♡ぎゅーってしてねよ(凄いお腹の音鳴る)【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -225,7 +226,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳はむ / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/30</td>
+         <td class="date A5">2021/11/30</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/4qrHUhLMdTI', 'blank')">【耳舐め/ASMR】愛されすぎて脳までトロけちゃう♡甘々ゼロ距離囁き吐息リップ音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -235,7 +236,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/1</td>
+         <td class="date A5">2021/12/1</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/EdDeSFkTh_8', 'blank')">耳奥刺激でゾクゾク♡膝枕で安眠耳かき囁きボイス/lappillow and ear bads/whisper voice【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -245,7 +246,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / ガラガラ / シチュエーション / 心音 / ベビーパウダー</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/7</td>
+         <td class="date A5">2021/12/7</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/PMwLDbASwP8', 'blank')">【ASMR/添い寝心音】ばぶみ全肯定甘やかし寝かしつけ♡ママにいっぱい甘えてすやすや眠ろぉね【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -255,7 +256,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / ジェルボール / ブラシ / ベビーパウダー / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/8</td>
+         <td class="date A5">2021/12/8</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/xQtkbRbU2w8', 'blank')">【ASMR/耳かき/マッサージ】即堕ち快眠♡脳まで気持ち良い音と囁きで癒される 睡眠誘導【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -265,7 +266,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">シチュエーション / 耳はむ / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/10</td>
+         <td class="date A5">2021/12/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/oKXIOfVMJoQ', 'blank')">【ASMR/耳舐め】生意気な女の子に舐めつくされて負けちゃえ♡耳奥ゾクゾク耳はむリップ音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -275,7 +276,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / シャンプー / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/12</td>
+         <td class="date A5">2021/12/12</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/H2s0pCg6IYo', 'blank')">【ASMR/睡眠誘導】泡あわ極上シャンプーと囁きで癒しのひととき♡指かきタオルドライマッサージ【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -285,7 +286,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オノマトペ / 吐息</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/15</td>
+         <td class="date A5">2021/12/15</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/5K0-pHXusf8', 'blank')">【ASMR/睡眠誘導】こっちおいで♡あまあま密着こしょこしょ囁きオノマトペで癒しの安眠【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -295,7 +296,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/17</td>
+         <td class="date A5">2021/12/17</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Q-mIGgA0SXE', 'blank')">【耳舐めASMR】あまあま全肯定彼女に溺れちゃう💕密着ゼロ距離耳奥舐めで身も心も癒される💕【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -305,7 +306,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/22</td>
+         <td class="date A5">2021/12/22</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/7AqwiSI5VeM', 'blank')">【ASMR/安眠耳かき】やさしい刺激で即落ち快眠♡癒し効果抜群な耳かき囁きボイス【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -315,7 +316,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 吐息 / 耳かき / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/24</td>
+         <td class="date A5">2021/12/24</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/gis9A6-ctuM', 'blank')">【1万人耐久ASMR】聖夜はあまあま密着オイルマッサージと耳かきでぐっすり安眠🌃💕リップ音囁き耳ふー【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -325,7 +326,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳はむ / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/26</td>
+         <td class="date A5">2021/12/26</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/-O0yuyVGbRQ', 'blank')">【耳舐めASMR】吐息交じりの優しい刺激にぞわぞわ💕即落ち快眠囁きリップ音耳ふー【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -335,7 +336,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">心音 / 添い寝</td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/27</td>
+         <td class="date A5">2021/12/27</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Wy8IZiNmE94', 'blank')">【ASMR/安眠】ぎゅっと密着💕抱きしめ添い寝心音で深い眠りに誘う…relax Whisper voice【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -345,7 +346,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">心音 / 添い寝 / 吐息 / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/2</td>
+         <td class="date A5">2022/1/2</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/BH1e4SSz4Yg', 'blank')">【ASMR/耳かき心音】甘々彼女と添い寝でぎゅっとしよ💕お耳ぞわぞわゼロ距離耳ふー吐息【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -355,7 +356,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 耳はむ</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/4</td>
+         <td class="date A5">2022/1/4</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/hjlh3fy0Krk', 'blank')">【ASMR】耳ふー耳はむ攻めでゾワゾワふわふわ💕吐息囁き安眠whisper Voice【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -365,7 +366,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">心音 / 添い寝 / 吐息 / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/7</td>
+         <td class="date A5">2022/1/7</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/T6aVJ_-st9E', 'blank')">【耳舐めASMR】お布団の中で彼女が優しく癒す💕密着耳舐め添い寝リップ音心音吐息【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -375,7 +376,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 吐息 / 耳はむ / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/10</td>
+         <td class="date A5">2022/1/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/QATDIIcF7oA', 'blank')">【耳舐めASMR】アタマ空っぽにしてゾクゾクとろけちゃえ💕甘々彼女のリップ音吐息密着ゼロ距離囁きWhisper voice【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -385,7 +386,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / ジェルボール / 手袋 / 吐息</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/11</td>
+         <td class="date A5">2022/1/11</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Gd_ZaxHSoAw', 'blank')">【ASMR/安眠】包み込まれるような気持ちよさ💕快眠マッサージで即落ち入眠💕吐息囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -395,7 +396,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / ブラシ / 耳かき / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/13</td>
+         <td class="date A5">2022/1/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/TBycdPaHjr8', 'blank')">【安眠ASMR】お膝の上で極上耳かき💕密着距離で耳ふー囁きなでなでゾクゾク癒されちゃう【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -405,7 +406,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/15</td>
+         <td class="date A5">2022/1/15</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/TmEKrPaRpmg', 'blank')">【耳舐めASMR】甘々メイド彼女の濃厚ご奉仕耳舐め💕すきすき連呼で凝り固まったお耳を舌と吐息でほぐします💕Whisper voice【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -415,7 +416,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 吐息 / ベビーパウダー </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/17</td>
+         <td class="date A5">2022/1/17</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/IhJIgdJLNYk', 'blank')">【安眠ASMR】優しい刺激でとろけちゃう💕快眠オイルマッサージ吐息囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -425,7 +426,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">ガラガラ / 心音 / 添い寝</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/20</td>
+         <td class="date A5">2022/1/20</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/3kAg6jz5VD0', 'blank')">【ASMR】ばぶみに溺れる💕甘々密着💕心音添い寝おなかの音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -435,7 +436,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オノマトペ / 吐息 / 耳はむ / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/21</td>
+         <td class="date A5">2022/1/21</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/MotNEDMR1b8', 'blank')">【ASMR】耳はむ吐息でぞわぞわ💕指かきと囁きオノマトペ🌃添い寝で安眠【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -445,7 +446,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">シチュエーション / 吐息 / 耳はむ / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/22</td>
+         <td class="date A5">2022/1/22</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/vvlDaLKHtBk', 'blank')">【耳舐めASMR】我慢だよ？甘々彼女のお耳攻めで抵抗できない💕旅館お泊りデート💕ゼロ距離リップ音吐息囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -455,7 +456,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / シャンプー / ジェルボール / 手袋 / 吐息 / ブラシ</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/24</td>
+         <td class="date A5">2022/1/24</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/FMEzw6Yd0JA', 'blank')">【ASMR】安眠極上シャンプーでキレイさっぱりリラックス🛁♡タオルドライ/囁き/吐息【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -465,7 +466,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 耳かき / 耳はむ / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/27</td>
+         <td class="date A5">2022/1/27</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/S_PIvTOcC7A', 'blank')">【耳舐めASMR】癒してんこ盛り💕甘々彼女がたっぷり癒すオイルマッサージ耳かきリップ音ゼロ距離囁き💕【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -475,7 +476,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">飴 / オイルマッサージ / ブラシ / 耳かき / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/28</td>
+         <td class="date A5">2022/1/28</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/sNI4mF0zFkc', 'blank')">【ASMR】甘く囁かれながら耳かきとオイルマッサージ💕飴舐め/お腹の音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -485,7 +486,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/29</td>
+         <td class="date A5">2022/1/29</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/r5f8eu5VOns', 'blank')">【耳舐めASMR】嫉妬深い彼女のすきすき連呼で甘い時間過ごそ💕密着囁き吐息でゾクゾクリップ音💕【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -495,7 +496,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">心音 / 添い寝 / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/6</td>
+         <td class="date A5">2022/2/6</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/zj3leoi9Wps', 'blank')">【ASMR】ぎゅってしてねよ💕甘やかされながら添い寝で安眠心音ゼロ距離ゾワゾワ囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -505,7 +506,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オノマトペ / 吐息 / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/7</td>
+         <td class="date A5">2022/2/7</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/H5Wu-XtN6nM', 'blank')">【耳舐めASMR】耳元密着囁きオノマトペ💕吐息でゾクゾクしよ【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -515,7 +516,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">カウントアップ / 吐息 / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/10</td>
+         <td class="date A5">2022/2/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/sLvsYiWrick', 'blank')">【ASMR】二人の記念だよ💗１００回愛を囁く💗囁きたっぷり/ざぁこリップ音すきすき連呼カウントアップ他【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -525,7 +526,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">シチュエーション / 吐息 / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/12</td>
+         <td class="date A5">2022/2/12</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/u7ZpFGymbYw', 'blank')">【耳舐めASMR】甘えん坊妹がお兄ちゃんを癒す💕吐息ゼロ距離囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -535,7 +536,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / ブラシ / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/13</td>
+         <td class="date A5">2022/2/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/XiFM1CzBS-I', 'blank')">【安眠ASMR】甘々彼女の膝枕💗耳奥刺激でぞわぞわ快眠しよ💗吐息囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -545,7 +546,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">心音 / 添い寝</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/18</td>
+         <td class="date A5">2022/2/18</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/z7tMLJCIgdI', 'blank')">【安眠ASMR】おいで💕ぎゅってしてねよ💕鼓動感じる甘々密着心音添い寝【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -555,7 +556,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳はむ / 耳舐め / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/19</td>
+         <td class="date A5">2022/2/19</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/fS7kqYnQ0A4', 'blank')">【耳舐めASMR】お耳とろとろにしちゃうね💕密着囁き吐息癒しの耳舐め【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -565,7 +566,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / カウントアップ / ジェル / 吐息 </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/20</td>
+         <td class="date A5">2022/2/20</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/gsyaXOeUpn4', 'blank')">【2万人耐久ASMR】アタマ空っぽにしよ💕囁きカウントアップで即安眠/オイルマッサージで癒しのひといき【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -575,7 +576,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳かき / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/21</td>
+         <td class="date A5">2022/2/21</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/n4c7BYwo9tY', 'blank')">【ASMR】耳奥までゾクゾク💕膝枕で密着囁き耳かき【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -585,7 +586,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">シチュエーション / 吐息 / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/22</td>
+         <td class="date A5">2022/2/22</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/MbPm5fstkxc', 'blank')">【耳舐めASMR】ねこのひ♡甘えん坊彼女にひたすら甘えられる【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -595,7 +596,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / ジェルボール / タオル </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/23</td>
+         <td class="date A5">2022/2/23</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/-4Do_fh5knc', 'blank')">【安眠ASMR】ココロもカラダも優しく癒しちゃう♡オイルマッサージ【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -605,7 +606,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/26</td>
+         <td class="date A5">2022/2/26</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/jsqf506at-4', 'blank')">【耳舐めASMR】全肯定彼女にとことん甘えちゃえ癒されてぐっすり💗全身ゾワゾワ密着囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -615,7 +616,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 心音 / 添い寝 / 吐息</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/2</td>
+         <td class="date A5">2022/3/2</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/tK1fK8-92mY', 'blank')">【ASMR】ぐっすり眠れるよう抱きしめてあげるね💗オイルマッサージ添い寝心音おなかのおと【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -625,7 +626,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">ブラシ / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/4</td>
+         <td class="date A5">2022/3/4</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/CJY7w0AH9UI', 'blank')">【ASMR】平日の疲れぜーんぶとっちゃうね♡安眠耳かき【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -635,7 +636,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/6</td>
+         <td class="date A5">2022/3/6</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/yqgqvQQlql8', 'blank')">【耳舐めASMR】お耳汚しちゃうね♡脳までとろける甘々囁き【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -645,7 +646,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オノマトペ / 吐息</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/9</td>
+         <td class="date A5">2022/3/9</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/0TTeOvLSaU0', 'blank')">【ASMR】ゼロ距離囁きと吐息でカラダふわふわゾワゾワ💗オノマトペ密着囁きで即快眠 whisper voice【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -655,7 +656,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">雑談</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/10</td>
+         <td class="date A5">2022/3/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/LENKKkSifbg', 'blank')">【ASMR】寝起きの彼女がお見送り♡バイノーラル囁き雑談【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -665,7 +666,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / 吐息 / 耳はむ / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/12</td>
+         <td class="date A5">2022/3/12</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/4at5SyhGMsg', 'blank')">【耳舐めASMR】寝てるだけでいいよ♡お耳好き放題されてとろける耳舐めオイルマッサージ密着吐息【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -675,7 +676,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">心音 / 添い寝 / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/13</td>
+         <td class="date A5">2022/3/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/kJ6VRU2-DpU', 'blank')">【ASMR】今夜は一緒にねよ？ぎゅっと抱き締め密着心音添い寝囁き⚠︎お腹の音！【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -685,7 +686,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">飴 / 咀嚼音 / 歯磨き / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/14</td>
+         <td class="date A5">2022/3/14</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/A0ApH8SxH0E', 'blank')">【ASMR】ぜーんぶ食べちゃうね♡甘々ホワイトデー独り占め♡咀嚼音飴舐め歯磨き耳舐めリップ音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -695,7 +696,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">雑談</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/15</td>
+         <td class="date A5">2022/3/15</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/MzpZGkhw038', 'blank')">【ASMR】朝の活力ちゃーじ♡お布団の中でもぞもぞ寝起きでお見送りするね【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -705,7 +706,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">オイルマッサージ / ジェル / ジェルボール / ブラシ / 耳かき / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/17</td>
+         <td class="date A5">2022/3/17</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/yJsz2wj19Y4', 'blank')">【ASMR】安眠快眠安眠！じっくり耳かきとオイルマッサージ/身体楽にして聴いてね🎧【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -715,7 +716,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">シチュエーション / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/19</td>
+         <td class="date A5">2022/3/19</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/-t1UW09MqXY', 'blank')">【耳舐めASMR/シチュ】小悪魔な後輩ちゃんにお耳いじめられちゃう💗囁き/Ear licking【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -725,7 +726,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">シャンプー / ジェル / 吐息 / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/23</td>
+         <td class="date A5">2022/3/23</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/R3rxJVdnTpw', 'blank')">【ASMR】気分爽快♡たっぷりの泡で極上シャンプー/囁き睡眠誘導オイルマッサージ【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -735,7 +736,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">添い寝 / 吐息 / ブラシ / 耳かき / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/27</td>
+         <td class="date A5">2022/3/27</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/GSyjmdtXAH4', 'blank')">【ASMR】密着添い寝と耳かきでぞわぞわ優しい刺激♡Deep Ear Cleaning Penetrates the Brain【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -745,7 +746,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳はむ / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/29</td>
+         <td class="date A5">2022/3/29</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Jvevdtb6mqQ', 'blank')">【ASMR】甘々囁き♡好きに溺れろ♡耳はむ/抱き締め/リップ音【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -755,7 +756,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳舐め / リップ音</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/2</td>
+         <td class="date A5">2022/4/2</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/ApOilPiKxv4', 'blank')">【耳舐めASMR】とことんいちゃ甘々耳舐め♡リップ音♡吐息/whisper/ear licking【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -765,7 +766,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">ジェルボール / シャンプー</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/4</td>
+         <td class="date A5">2022/4/4</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/eU8oT7acA28', 'blank')">【ASMR】シャンプーで気分爽快揉みほぐし♡甘々囁きで安眠♡Relax with shampoo 【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -775,7 +776,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">ブラシ / 耳かき / 指かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/6</td>
+         <td class="date A5">2022/4/6</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/PV9Jf5McZso', 'blank')">【ASMR】ゾワゾワ耳かきでココロもカラダも気持ちいい♡Relax with Ear Cleaning♡Ear Pick 【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -785,7 +786,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">音叉 / 耳かき</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/8</td>
+         <td class="date A5">2022/4/8</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/hiJIWKfgIn0', 'blank')">【ASMR】癒しの音と囁きで浄化されちゃうかも♡耳かき/528hz音叉/Healing sound/Earpick【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -795,7 +796,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3">吐息 / 耳舐め</td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/9</td>
+         <td class="date A5">2022/4/9</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Drzat1Asaug', 'blank')">【耳舐めASMR】耳奥から全身ゾクゾク♡優しい刺激の密着吐息囁き♡Earlicking/Mouthsound【新人Vtuber/夜想といき】</button></td>
       </tr>
 
@@ -816,7 +817,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/5</td>
+         <td class="date A5">2021/11/5</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/PCQYKZE0e18', 'blank')">【マシュマロ雑談】デビュー3日目のVtuberが質問に答える♡りべんじ！【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -826,7 +827,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/6</td>
+         <td class="date A5">2021/11/6</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/VBuED3HwQFU', 'blank')">【朝活/雑談】おはよう言いに来て♡朝弱Vtuberはじめての朝活🌞【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -836,7 +837,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/8</td>
+         <td class="date A5">2021/11/8</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/pNXNPp58YlU', 'blank')">【雑談】3.000人感謝♡差分お披露目🌙月曜日おつかれさま会🌙【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -846,7 +847,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/10</td>
+         <td class="date A5">2021/11/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/mEDwKdWixEk', 'blank')">【雑談】初見歓迎！水曜日もおつかれさま会💧🌙【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -856,7 +857,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/15</td>
+         <td class="date A5">2021/11/15</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/8KIOEiDs-lg', 'blank')">【雑談】かちゅぜつ特訓つよつよになるぞぉ🔥【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -866,7 +867,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/16</td>
+         <td class="date A5">2021/11/16</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/jfBTnxx0sxY', 'blank')">【朝活/雑談】朝から癒されにおいでよお♡おはようしに来てね【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -876,7 +877,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/17</td>
+         <td class="date A5">2021/11/17</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/dh7CdQaafec', 'blank')">【収益化記念】みんなの応援のおかげ♡初飲み乾杯しよ🥃【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -886,7 +887,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/19</td>
+         <td class="date A5">2021/11/19</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/saHjfFyto14', 'blank')">【スパチャ読み雑談】収益化記念💖感謝のお名前呼び【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -896,7 +897,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/22</td>
+         <td class="date A5">2021/11/22</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Z30CN9YpUxI', 'blank')">【雑談】5000人感謝💖kawaiiサインつくろお【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -906,7 +907,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/25</td>
+         <td class="date A5">2021/11/25</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/MfH9Lx9qus8', 'blank')">【朝活/雑談】早起きえらーい♡といきとお話して元気チャージ⚡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -916,7 +917,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/30</td>
+         <td class="date A5">2021/11/30</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/sADz1wvzepY', 'blank')">【記念雑談】12月もよろしくね♡うれしい告知と目標ゆるっとトーク【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -926,7 +927,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/3</td>
+         <td class="date A5">2021/12/3</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/M3A-n0JE5Hs', 'blank')">【バイノーラル/咀嚼音】昼活もぐもぐタイム🌞🍴いいおとするかな？【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -936,7 +937,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/5</td>
+         <td class="date A5">2021/12/5</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/sFPO7K9J3Vc', 'blank')">【✨デビュー１か月記念✨】お絵描き心理テストでといきのこと深層まで知って♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -946,7 +947,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/7</td>
+         <td class="date A5">2021/12/7</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Kq9d2-c_zvg', 'blank')">【寝起き朝活雑談】お絵描き心理テストで脳みそ活性化【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -956,7 +957,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/13</td>
+         <td class="date A5">2021/12/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/UVICYkw9U3c', 'blank')">【記念雑談】8000人感謝💖みんなで乾杯しよお【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -966,7 +967,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/14</td>
+         <td class="date A5">2021/12/14</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/fiVMdyXtDvg', 'blank')">【朝活雑談】初見さんも歓迎♡寒い朝起きられてえらーい！お見送りするね♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -976,7 +977,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/20</td>
+         <td class="date A5">2021/12/20</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/c8TW7nqdepE', 'blank')">【雑談】Vtuberバトルクイズコラボ感謝💖褒めて💕【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -986,7 +987,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/21</td>
+         <td class="date A5">2021/12/21</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/a_lwSwLI19w', 'blank')">【雑談】いっぱいお話しよ♡アクスタ発売とうたみたの話とかいろいろ【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -996,7 +997,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/23</td>
+         <td class="date A5">2021/12/23</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/DtyCrrdqT9c', 'blank')">【朝活雑談】初見歓迎♡起きれた人をほめたたえお見送りする朝【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1006,7 +1007,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/24</td>
+         <td class="date A5">2021/12/24</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/EoRGifUXPHw', 'blank')">サンタさん💗今年のクリスマスは１万人いきたいな💗【新人Vtuber/夜想といき/雑談】</button></td>
        </tr>
 
@@ -1016,7 +1017,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/25</td>
+         <td class="date A5">2021/12/25</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/bQloTNk3DRk', 'blank')">【一万人記念雑談】クリスマスはといきといっしょ💗クリパといき布教会💗【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1026,7 +1027,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/29</td>
+         <td class="date A5">2021/12/29</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/kTWZ4SPHMAI', 'blank')">【雑談】1.11万人感謝わんわんわん♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1036,7 +1037,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/31</td>
+         <td class="date A5">2021/12/31</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/7BMmPqUpsuA', 'blank')">【2021大晦日】年越しそばと新年カウントダウン💗Happy New Year【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1046,7 +1047,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/1</td>
+         <td class="date A5">2022/1/1</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/0WtIbLzG3bA', 'blank')">【2022元旦】新年の挨拶♡今年の抱負雑談【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1056,7 +1057,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/2</td>
+         <td class="date A5">2022/1/2</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/TiYoLzdKDZc', 'blank')">【お正月朝活】お雑煮食べてげんきだそ♡咀嚼音ASMR【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1066,7 +1067,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/3</td>
+         <td class="date A5">2022/1/3</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/fZsXSI9eLV4', 'blank')">【2か月記念雑談】お正月はまったりといきと話そ💕【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1076,7 +1077,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/4</td>
+         <td class="date A5">2022/1/4</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/9f2a-qUIMtY', 'blank')">【朝活】えらすぎ💕仕事初めを乗り切ろお全肯定応援で開運【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1086,7 +1087,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/5</td>
+         <td class="date A5">2022/1/5</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/e0JXIyjY1NM', 'blank')">【咀嚼音ASMR】深夜に食べるシリアルの音と歯磨き【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1096,7 +1097,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/6</td>
+         <td class="date A5">2022/1/6</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/6WngUfm0pjc', 'blank')">【雑談】馬鹿は風邪ひかないっていったじゃぁん！！！【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1106,7 +1107,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/12</td>
+         <td class="date A5">2022/1/12</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/aO5xtAHEyJU', 'blank')">【雑談/freetalk】13.7ｋありがとお♡これからもよろしくね💗🎉【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1116,7 +1117,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/19</td>
+         <td class="date A5">2022/1/19</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Dn3i1MfSssc', 'blank')">【1.5万人目前♡雑談】ねぇねぇといきにかまってよお💕初見も歓迎【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1126,7 +1127,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/25</td>
+         <td class="date A5">2022/1/25</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/jPzp9_gUDAw', 'blank')">【バイノーラル朝活雑談】早起きしたから褒めてくれ♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1136,7 +1137,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/26</td>
+         <td class="date A5">2022/1/26</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/80M_hFbqLvk', 'blank')">【1.6万人記念雑談】いつもありがとお♡乾杯しよお♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1146,7 +1147,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/1/31</td>
+         <td class="date A5">2022/1/31</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/pNTXGnrpPec', 'blank')">【雑談/freetalk】うれしい告知あり💗🎉1月おつかれさま会♡2月もよろしくね💕【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1156,7 +1157,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/3</td>
+         <td class="date A5">2022/2/3</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/RXwLLwnriVk', 'blank')">【💗メンバーシップ開設💗】３か月記念雑談♡メンシ紹介♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1166,7 +1167,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/4</td>
+         <td class="date A5">2022/2/4</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/2dJwcZi-rKg', 'blank')">【バイノーラル朝活雑談】明日おやすみだから会いに来て♡朝から癒されよ🌞【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1176,7 +1177,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/13</td>
+         <td class="date A5">2022/2/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/7M8H0BxlMPs', 'blank')">【雑談/freetalk】バレンタインイブにヤンデレシチュボ投稿したのでいいこいいこして🍫💗【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1186,7 +1187,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/14</td>
+         <td class="date A5">2022/2/14</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/f2Ya5qoN2NQ', 'blank')">【セリフ読みマシュマロ雑談】といきと甘々バレンタインすごそ💗【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1196,7 +1197,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/23</td>
+         <td class="date A5">2022/2/23</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/9NhhzkPlnNc', 'blank')">【2万人記念】感謝♡飯テロ♡松阪牛たべてお祝い雑談【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1206,7 +1207,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/28</td>
+         <td class="date A5">2022/2/28</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/EDOPDNoT3RA', 'blank')">【雑談】シチュボ聴いてくれた？裏話と2月おつかれさま会💗【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1216,7 +1217,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/3</td>
+         <td class="date A5">2022/3/3</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/NolPYezbDgI', 'blank')">【雑談】デビュー４か月記念✨チョコパーティー♡甘々過ごそ♡freetalk【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1226,7 +1227,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/7</td>
+         <td class="date A5">2022/3/7</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/pWKulTQ5gZk', 'blank')">【雑談】コスケットコラボ生配信おつかれさま会💗【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1236,7 +1237,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/8</td>
+         <td class="date A5">2022/3/8</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/pePHzJWJoto', 'blank')">【雑談】今度の映画デート、なにみるか決めよ♡オススメ作品教えて【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1246,7 +1247,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/10</td>
+         <td class="date A5">2022/3/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/LENKKkSifbg', 'blank')">【ASMR】寝起きの彼女がお見送り♡バイノーラル囁き雑談【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1256,7 +1257,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/16</td>
+         <td class="date A5">2022/3/16</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/ERQOUBnOiJo', 'blank')">【雑談】コスケットでなにするの♡初リアイベ直前紹介【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1266,7 +1267,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/20</td>
+         <td class="date A5">2022/3/20</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/hY6jWin2hMo', 'blank')">【雑談】コスケット感謝♡おつかれさま【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1276,7 +1277,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/23</td>
+         <td class="date A5">2022/3/23</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/FWGbx-ExDUM', 'blank')">【朝活ASMR】お布団の中でくっつこ♡寝起き添い寝バイノーラル囁き雑談【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1286,7 +1287,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/3</td>
+         <td class="date A5">2022/4/3</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/aHeBdr-y4Gk', 'blank')">【記念雑談】お花見しよ🌸デビュー5か月🌸チャンネル登録2.5万人感謝🌸Free talk【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1296,7 +1297,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/10</td>
+         <td class="date A5">2022/4/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/VSNna1D8zDI', 'blank')">【雑談/Freetalk】おでかけにいってきたよ✊🔥【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1306,7 +1307,7 @@
          <td class="songtitle A2"> </td> 
          <td class="tag A3"> </td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/12</td>
+         <td class="date A5">2022/4/12</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/cNqmgpCT_XM', 'blank')">【記念雑談】3万人感謝💖🎉愛を込めてスライムつくるよお💧【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1330,7 +1331,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">深夜放送</td>
-         <td class="date">2021/11/18</td>
+         <td class="date A5">2021/11/18</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/8wbzK8LJ-UA', 'blank')">【深夜放送】新作ホラゲ👻ひとりでも余裕でいけるよね？【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1340,7 +1341,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">どこでもキャッチャー</td>
-         <td class="date">2021/11/23</td>
+         <td class="date A5">2021/11/23</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/L8G5Oo5W408', 'blank')">【どこでもキャッチャー/クレーンゲーム】初挑戦！初心者でも攻略するぞぉ！といきとクリスマス準備しよ🎄💕【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1350,7 +1351,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">帰り道</td>
-         <td class="date">2021/12/2</td>
+         <td class="date A5">2021/12/2</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Lb3xKuh8rFI', 'blank')">【ホラゲ実況】帰り道はまっすぐ帰りたいJC探索ホラー【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1360,7 +1361,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">マイクラ</td>
-         <td class="date">2021/12/11</td>
+         <td class="date A5">2021/12/11</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/uFr2mundkRI', 'blank')">【マイクラ】お披露目あり！初見も歓迎♡まったりサバイバル【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1370,7 +1371,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">マイクラ</td>
-         <td class="date">2021/12/13</td>
+         <td class="date A5">2021/12/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/u0MtTLptwLM', 'blank')">【雑談/マイクラ】いつも応援ありがとうのスパちゃよみ♡と木を切る【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1380,7 +1381,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">マイクラ</td>
-         <td class="date">2021/12/18</td>
+         <td class="date A5">2021/12/18</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/6Jn__QSf608', 'blank')">【朝活マイクラ】初見も歓迎♡かわいいおうち立てるの応援して🏠💗【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1390,7 +1391,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">マイクラ</td>
-         <td class="date">2021/12/26</td>
+         <td class="date A5">2021/12/26</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/7TA6URVgHlU', 'blank')">【マイクラ】全ロスとの闘い🔥村に帰りたい【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1401,7 +1402,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">恐怖の森</td>
-         <td class="date">2021/12/29</td>
+         <td class="date A5">2021/12/29</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/syHamxG277Y', 'blank')">ホラゲ/恐怖の森【増殖】叫んだら終了！こんな夜中に森だなんて・・・【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1411,7 +1412,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">恐怖の森</td>
-         <td class="date">2022/1/8</td>
+         <td class="date A5">2022/1/8</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/DlYKJOtpqk4', 'blank')">【ホラゲ/恐怖の森-増殖-】かかってこい魑魅魍魎（かけない）絶叫注意👻💕【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1421,7 +1422,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">恐怖の森</td>
-         <td class="date">2022/1/14</td>
+         <td class="date A5">2022/1/14</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/1pXCTt2eDa4', 'blank')">【ホラゲ/恐怖の森-増殖-】今度こそ負けない！これが最後の戦いだ……👻🏍🔥【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1431,7 +1432,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">どこでもキャッチャー</td>
-         <td class="date">2022/2/1</td>
+         <td class="date A5">2022/2/1</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/r5DI_nXxZAk', 'blank')">【クレーンゲーム】といきと甘々バレンタイン準備しよ🍫💝【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1441,7 +1442,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">NEEDY GIRL OVERDOSE</td>
-         <td class="date">2022/2/20</td>
+         <td class="date A5">2022/2/20</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/GUX--WzYDP8', 'blank')">【NEEDY GIRL OVERDOSE】インターネットエンジェル💔メンヘラちゃんに学ぶ💔配信者育成ゲーム【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1451,7 +1452,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">NEEDY GIRL OVERDOSE</td>
-         <td class="date">2022/2/27</td>
+         <td class="date A5">2022/2/27</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/W1dONzXpTSs', 'blank')">【NEEDY GIRL OVERDOSE】幸せのカタチは100万フォロワー？あめちゃんおねがいいかないで【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1461,7 +1462,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">ずつう</td>
-         <td class="date">2022/3/5</td>
+         <td class="date A5">2022/3/5</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/rT9UVMuDUj8', 'blank')">【ホラゲ実況/ずつう】美少女と探索しよ♡和製ホラーでぞわっと【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1471,7 +1472,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">RFA</td>
-         <td class="date">2022/3/12</td>
+         <td class="date A5">2022/3/12</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/TfO3dg16mtA', 'blank')">【リングフィットアドベンチャー/3Dio】体力つけないとねっ🔥がんばれして♡バイノーラルマイク♡ヘッドホン推奨【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1481,7 +1482,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">恐怖の森</td>
-         <td class="date">2022/3/21</td>
+         <td class="date A5">2022/3/21</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/8UW4dMmuF98', 'blank')">【閉店事件｜The Closing Shift】チラズアート新作ホラゲ👻カフェバイトおまかせあれー♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1491,7 +1492,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">写るんです</td>
-         <td class="date">2022/3/28</td>
+         <td class="date A5">2022/3/28</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/48WXz4DI8pk', 'blank')">【写るんです】「恐怖の森」作者さん新作ホラゲ！カメラがあればだいじょーぶ♡【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1501,7 +1502,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">RFA</td>
-         <td class="date">2022/4/3</td>
+         <td class="date A5">2022/4/3</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/-pSxHNnRlRY', 'blank')">【リングフィットアドベンチャー】体力向上❕一緒に運動しよ♡バイノーラル音声【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1511,7 +1512,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">マリオカート</td>
-         <td class="date">2022/4/8</td>
+         <td class="date A5">2022/4/8</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/A9O93Wi_5CY', 'blank')">【マリオカート8DX】ソロマリカデビュー🚗アクセル全開でGOOOOOO!!!【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1521,7 +1522,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">マリオカート</td>
-         <td class="date">2022/4/10</td>
+         <td class="date A5">2022/4/10</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/f4vos43bGK4', 'blank')">【マリオカート8DX】視聴者参加型であそぼ❕華麗なドラテクみせてやるうう🚗【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1531,7 +1532,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4">Ib</td>
-         <td class="date">2022/4/11</td>
+         <td class="date A5">2022/4/11</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/1K67rvax4Hg', 'blank')">【Ibリメイク】名作ホラゲを完全初見で実況※リメイク版ネタバレあり注意※【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1559,7 +1560,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/9</td>
+         <td class="date A5">2022/2/9</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/XZOA9IDGT4U', 'blank')">【メン限】2月の手描きカレンダーおえかき🎨🌈【新人Vtuber/夜想といき】</button></td>
        </tr>
         <tr class="len exclusive" id="B5-2">
@@ -1568,7 +1569,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td> 
-         <td class="date">2022/2/16</td>
+         <td class="date A5">2022/2/16</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Hsv35vR3zBo', 'blank')">【イラスト/雑談】といきっちゅ♡メンバー用イラスト色塗り【新人Vtuber/夜想といき】</button></td>
        </tr>
        <tr class="len exclusive" id="B5-3">
@@ -1577,7 +1578,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td> 
-         <td class="date">2022/2/19</td>
+         <td class="date A5">2022/2/19</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/MgSSWv72nQo', 'blank')">【メン限APEX】よわよわえぺ🔥レベル10にする【新人Vtuber/夜想といき】</button></td>
        </tr>
        <tr class="len exclusive" id="B5-4">
@@ -1586,7 +1587,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td> 
-         <td class="date">2022/3/13</td>
+         <td class="date A5">2022/3/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/VZ_9vt5NDSM', 'blank')">【同時視聴】休日おうち映画デート♡選ばれたのは『死霊館』がちホラーくっついてみよ👻【新人Vtuber/夜想といき】</button></td>
        </tr>
        <tr class="len exclusive" id="B5-5">
@@ -1595,7 +1596,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td> 
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/24</td>
+         <td class="date A5">2022/3/24</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/CUQAdCjxBvs', 'blank')">【メン限】歌練習とシチュボ台本つくり♡【新人Vtuber/夜想といき】</button></td>
        </tr>
        <tr class="len exclusive" id="B5-6">
@@ -1604,7 +1605,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td> 
          <td class="gametitle A4"></td>
-         <td class="date">2022/3/30</td>
+         <td class="date A5">2022/3/30</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/NjUv8jlCRNA', 'blank')">【イラスト】メン限カレンダーいらすとおえかき🎨💗【新人Vtuber/夜想といき】</button></td>
        </tr>
        <tr class="len exclusive" id="B5-7">
@@ -1613,7 +1614,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td> 
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/5</td>
+         <td class="date A5">2022/4/5</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/DoAqAmlQSIY', 'blank')">【雑談/メン限】ASMR用のグッズ一緒に選ぼ♡ネットショッピング【新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1646,7 +1647,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td> 
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/12</td>
+         <td class="date A5">2022/2/12</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/9bCPZFHVpTI', 'blank')">【バイノーラル音声】超ブラコンのメスガキ妹が悪戯してきたので仕返しをしてみる【男性向け/シチュエーションボイス】</button></td>
        </tr>
 
@@ -1656,7 +1657,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td> 
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/13</td>
+         <td class="date A5">2022/2/13</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/gH83cBCZVic', 'blank')">【バイノーラル音声】ヤンデレで嫉妬深い彼女は君が他の女にバレンタインチョコを貰ったことを許せない【シチュエーションボイス/男性向け/新人Vtuber/夜想といき】</button></td>
        </tr>
 
@@ -1666,7 +1667,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td> 
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/26</td>
+         <td class="date A5">2022/2/26</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/NcYXrMMpE0w', 'blank')">【ASMR】心に効く全肯定♡疲れたあなたを包むバブみ系年下彼女【シチュエーションボイス/夜想といき】</button></td>
        </tr>
 
@@ -1676,7 +1677,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td> 
-         <td class="date">2022/2/27</td>
+         <td class="date A5">2022/2/27</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/K5xh6qJbrjw', 'blank')">【ASMR】ご主人様、我慢なさってください♡アナタ専属メイドに看病される【バイノーラルシチュエーションボイス/夜想といき】</button></td>
        </tr>
 
@@ -1686,7 +1687,7 @@
          <td class="songtitle A2"></td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/4/1</td>
+         <td class="date A5">2022/4/1</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/y0y8yLVubz0', 'blank')">【ASMR/バイノーラル】清楚に見えて隠れドS なお嬢様に高圧的にお説教してもらいたい♡【男性向けシチュエーションボイス/夜想といき】</button></td>
        </tr>
 
@@ -1716,7 +1717,7 @@
          <td class="songtitle A2">ダーリンダンス</td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/11/3</td>
+         <td class="date A5">2021/11/3</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/Z05FATmfKQM', 'blank')">ダーリンダンス/かいりきベア♡covered by 夜想といき【歌ってみた/新人Vtuber】</button></td>
        </tr>
 
@@ -1726,7 +1727,7 @@
          <td class="songtitle A2">フォニイ</td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2021/12/26</td>
+         <td class="date A5">2021/12/26</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/LuNIrzht42o', 'blank')">フォニイ /ツミキ - 夜想といき(Cover)【新人Vtuber/歌ってみた】</button></td>
        </tr>
 
@@ -1736,7 +1737,7 @@
          <td class="songtitle A2">カーニバルハッピー</td> 
          <td class="tag A3"></td>
          <td class="gametitle A4"></td>
-         <td class="date">2022/2/6</td>
+         <td class="date A5">2022/2/6</td>
          <td class="title"><button class="btn" onclick="window.open('https://youtu.be/m1xofKLdFwk', 'blank')">カーニバルハッピー／かいりきベア♡Covered by 夜想といき【新人Vtuber/歌ってみた】</button></td>
        </tr>
 
@@ -1746,7 +1747,7 @@
           <td class="songtitle A2">アニマル</td> 
           <td class="tag A3"></td>
           <td class="gametitle A4"></td> 
-          <td class="date">2022/2/23</td>
+          <td class="date A5">2022/2/23</td>
           <td class="title"><button class="btn" onclick="window.open('https://youtu.be/4CzbuEu6HAQ', 'blank')">アニマル♡夜想といき【歌ってみた/DECO*27】</button></td>
          </tr>
      </tbody>
@@ -1807,28 +1808,23 @@
  category2 = document.getElementById("category-second");
  category2.onchange = changeCategory2;
 
-//検索欄非表示
+ //検索欄非表示
  document.getElementById("search").style.display = "none";
 
  //行調整
  linehidden();
 
  //列調整
- for(var i = 0; i < ColumnCounts ; i++){
-  document.getElementsByClassName('A1')[i].style.display = '';
-  document.getElementsByClassName('A2')[i].style.display = 'none';
-  document.getElementsByClassName('A3')[i].style.display = 'none';
-  document.getElementsByClassName('A4')[i].style.display = 'none';
- }
+ categorynon();
 
 }
 
- //セレクトボックス(1)動作
+//セレクトボックス１動作
 function changeCategory() {
 
  var changedCategory = category.value;
 
-//セレクトボックス(2)タイトル表示
+ //セレクトボックス２タイトル表示
  if (changedCategory == "sing" || changedCategory == "song") {
   if (document.getElementById("div1") != null){
    document.getElementById("div1").remove();
@@ -1854,53 +1850,37 @@ function changeCategory() {
   document.getElementById("search").style.display = "none";
  }
 
-//行調整
+ //行調整
  linehidden();
 
  if (checkboxA.checked == true){
   favcheck();
  }
 
-//列、ソート、セレクトボックス調整
- if(changedCategory == "non" || changedCategory == "talk" || changedCategory == "exclusive" || changedCategory == "situation"){
+ //列、ソート、セレクトボックス調整
+ if(changedCategory == "non"){
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "none";
-  for (var i = 0; i < ColumnCounts ; i++){
-   document.getElementsByClassName('A1')[i].style.display = '';
-   document.getElementsByClassName('A2')[i].style.display = 'none';
-   document.getElementsByClassName('A3')[i].style.display = 'none';
-   document.getElementsByClassName('A4')[i].style.display = 'none';
-  }
+  categorynon();
  } else if(changedCategory == "sing" ||  changedCategory == "song"){
   userList.sort('songtitle', { order: 'asc' });
   document.getElementById("category-second").style.display = "";
   ChangeSelectboxSong();
-  for (var i = 0; i < ColumnCounts ; i++){
-   document.getElementsByClassName('A1')[i].style.display = 'none';
-   document.getElementsByClassName('A2')[i].style.display = '';
-   document.getElementsByClassName('A3')[i].style.display = 'none';
-   document.getElementsByClassName('A4')[i].style.display = 'none';
-  }
+  categorysong();
  } else if (changedCategory == "ASMR") {
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "";
   ChangeSelectboxASMR();
-  for (var i = 0; i < ColumnCounts ; i++){
-   document.getElementsByClassName('A1')[i].style.display = 'none';
-   document.getElementsByClassName('A2')[i].style.display = 'none';
-   document.getElementsByClassName('A3')[i].style.display = '';
-   document.getElementsByClassName('A4')[i].style.display = 'none';
-  }
+  categoryasmr();
  } else if (changedCategory == "game") {
   userList.sort('gametitle', { order: 'desc' });
   document.getElementById("category-second").style.display = "";
   ChangeSelectboxGame();
-  for (var i = 0; i < ColumnCounts ; i++){
-   document.getElementsByClassName('A1')[i].style.display = 'none';
-   document.getElementsByClassName('A2')[i].style.display = 'none';
-   document.getElementsByClassName('A3')[i].style.display = 'none';
-   document.getElementsByClassName('A4')[i].style.display = '';
-  }
+  categorygame();
+ } else if (changedCategory == "talk" || changedCategory == "exclusive" || changedCategory == "situation"){
+  userList.sort('date', { order: 'desc' });
+  document.getElementById("category-second").style.display = "none";
+  categoryother();
  }
 }
 
@@ -1910,12 +1890,7 @@ function genrereset(){
  category.selectedIndex=0;
  userList.sort('date', { order: 'desc' });
  document.getElementById("category-second").style.display = "none";
- for (var i = 0; i < ColumnCounts ; i++){
-  document.getElementsByClassName('A1')[i].style.display = '';
-  document.getElementsByClassName('A2')[i].style.display = 'none';
-  document.getElementsByClassName('A3')[i].style.display = 'none';
-  document.getElementsByClassName('A4')[i].style.display = 'none';
- }
+ categorynon();
  linehidden();
  if (document.getElementById("div1") != null){
   document.getElementById("div1").remove();
@@ -2130,6 +2105,93 @@ function linehidden(){
    singsort = SingBElements[i];
    singsort.style.display = 'none';
   }
+ }
+}
+
+//列調整用
+function categorynon(){
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = '';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  } else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  }
+ }
+}
+
+function categorysong(){
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = '';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  } else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = 'none';
+  }
+ }
+}
+
+function categoryasmr(){
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = '';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  } else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = 'none';
+   document.getElementsByClassName('A5')[i].style.display = 'none';
+  }
+ }
+}
+
+function categorygame(){
+ if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = '';
+   document.getElementsByClassName('A5')[i].style.display = '';
+  } else {
+  for (var i = 0; i < ColumnCounts ; i++){
+   document.getElementsByClassName('A1')[i].style.display = 'none';
+   document.getElementsByClassName('A2')[i].style.display = 'none';
+   document.getElementsByClassName('A3')[i].style.display = 'none';
+   document.getElementsByClassName('A4')[i].style.display = '';
+   document.getElementsByClassName('A5')[i].style.display = 'none';
+  }
+ }
+}
+
+function categoryother(){
+ for (var i = 0; i < ColumnCounts ; i++){
+  document.getElementsByClassName('A1')[i].style.display = 'none';
+  document.getElementsByClassName('A2')[i].style.display = 'none';
+  document.getElementsByClassName('A3')[i].style.display = 'none';
+  document.getElementsByClassName('A4')[i].style.display = 'none';
+  document.getElementsByClassName('A5')[i].style.display = '';
  }
 }
 

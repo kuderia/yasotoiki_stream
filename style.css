@@ -1,29 +1,41 @@
 body {
- background-color: #00bfff;
-}
-
-h1.titlecolor{
- background-color: #cdefff;
- margin:0;
- padding:0;
+ font-size : small;
+ margin:0px
+ background-color: #ff69b4; 
 }
 
 div.fav{
- background-color: #cdefff;
+ font-family:"Yu Gothic"; 
+ position:relative;
  margin:0;
  padding:0;
+}
+
+span#image{
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ width: auto;
+ height: 115px;
+}
+
+/*スマホ表示*/
+@media screen and (max-width:479px){
+ #body{
+  width: 360px;
+ }
 }
 
 div#users{
- background-color: #cdefff;
+ font-family:"Yu Gothic";
+ background-color: #FFEEFF;
  margin:0;
  padding:0;
 }
 
-
-#body{
- width: 360px;
-}
 
 table {
     table-layout: fixed;
@@ -31,12 +43,12 @@ table {
 }
 
 th,td {
-    background-color: #cdefff;
+    background-color: #FFEEFF;
     border: solid 1px;   /* 枠線指定 */
 }
 
 .checkbox{
-   background-color: #cdefff;
+   background-color: #FFEEFF;
    border: 0px none;
 }
 
@@ -47,17 +59,33 @@ th.A0{
 
 /*ジャンル*/
 th.A1 {
-   width: 30%;
+  width: 30%;
 }
 
 /*曲名*/
-th.A2 {
+@media screen and (min-width:480px){
+ th.A2 {
    width: 30%;
+ }
 }
 
+@media screen and (max-width:479px){
+ th.A2{
+  width: 40%
+ }
+} 
+
 /*内容*/
-th.A3 {
+@media screen and (min-width:480px){
+ th.A3 {
    width: 40%;
+ }
+}
+
+@media screen and (max-width:479px){
+ th.A3 {
+   width: 55%;
+ }
 }
 
 
