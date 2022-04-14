@@ -1,16 +1,55 @@
 body {
  font-size : small;
  margin:0px;
+
  background-color: #ff69b4; 
 }
 
+h1#strcolor1{
+ margin:0;
+ padding:0;
+ color: #e0218a;
+ -webkit-text-stroke: 0.5px #fff;
+}
+
+span#strcolor2{
+ color: #de82a7;
+ -webkit-text-stroke: 1px #ff1493;  
+}
+
+span#strcolor3{
+ color: #de82a7;
+ -webkit-text-stroke: 1px #ff1493; 
+}
+
+
+@media screen and (min-width:480px){
 div.fav{
  font-family:"Yu Gothic"; 
  margin:0;
  padding:0;
  background-image:url('/image.jpg');
  background-position:center center;
- background-size:auto 115px;
+ background-size:100% auto;
+ background-repeat: no-repeat;
+ opacity:0.9;  
+}
+}
+
+
+
+
+@media screen and (max-width:479px){
+div.fav{
+ font-family:"Yu Gothic"; 
+ margin:0;
+ padding:0;
+ background-image:url('/image.jpg');
+ background-position:center center;
+ background-size:360px auto;
+ background-repeat: no-repeat;
+  opacity:0.9;  
+}
 }
 
 
@@ -51,45 +90,29 @@ th.A0{
 
 /*ジャンル*/
 th.A1 {
-  width: 30%;
+  width: 95px;
 }
 
 /*曲名*/
-@media screen and (min-width:480px){
- th.A2 {
-   width: 30%;
- }
+th.A2{
+  width: 150px;
 }
 
-@media screen and (max-width:479px){
- th.A2{
-  width: 40%
- }
-} 
 
 /*内容*/
-@media screen and (min-width:480px){
- th.A3 {
-   width: 40%;
- }
+th.A3 {
+   width: 160px;
 }
-
-@media screen and (max-width:479px){
- th.A3 {
-   width: 55%;
- }
-}
-
 
 /*ゲームタイトル*/
 th.A4 {
-  width: 30%;
+  width: 160px;
 }
 
 
 /*配信日*/
 th.A5 {
-   width: 30%;
+   width: 75px;
 }
 
 
