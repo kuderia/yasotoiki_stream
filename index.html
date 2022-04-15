@@ -53,8 +53,8 @@
 
    <div id="users">
     <input type ="search" class="search" id="search" placeholder="曲名を入力">
-    　<input type="radio" class="radio" value="default" onclick="radiocheck()" checked>曲名順
-    　<input type="radio" class="radio" value="streamdate"onclick="radiocheck()">配信日順
+    　<input type="radio" id="radio1" value="default" onclick="radiocheck()" checked>
+    　<input type="radio" id="radio2" value="streamdate"onclick="radiocheck()">
     
     <table>
      <thead>
@@ -2108,10 +2108,17 @@ function linehidden(){
 //列調整用
 function categorynon(){
 
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "none";
-  document.getElementsByClassName("radio")[0].style.display = "none";
-  document.getElementsByClassName("radio")[1].style.display = "none";
+  document.getElementsById("radio1").style.display = "none";
+  document.getElementsById("radio2").style.display = "none";
 
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
@@ -2135,10 +2142,21 @@ function categorynon(){
 
 function categorysong(){
 
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
   userList.sort('songtitle', { order: 'asc' });
   document.getElementById("category-second").style.display = "";
-  document.getElementsByClassName("radio")[0].style.display = "";
-  document.getElementsByClassName("radio")[1].style.display = "";
+  document.getElementById("radio1").style.display = "";
+  document.getElementById("radio1").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname1">　曲名順</div>');
+  document.getElementById("radio2").style.display = "";
+  document.getElementById("radio2").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname1">　配信日順</div>');
+
+
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
@@ -2161,10 +2179,17 @@ function categorysong(){
 
 function categoryasmr(){
 
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "";
-  document.getElementsByClassName("radio")[0].style.display = "none";
-  document.getElementsByClassName("radio")[1].style.display = "none";
+  document.getElementsById("radio1").style.display = "none";
+  document.getElementsById("radio2").style.display = "none";
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
@@ -2187,10 +2212,17 @@ function categoryasmr(){
 
 function categorygame(){
 
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
   userList.sort('gametitle', { order: 'desc' });
   document.getElementById("category-second").style.display = "";
-  document.getElementsByClassName("radio")[0].style.display = "none";
-  document.getElementsByClassName("radio")[1].style.display = "none";
+  document.getElementsById("radio1").style.display = "none";
+  document.getElementsById("radio2").style.display = "none";
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
@@ -2213,10 +2245,17 @@ function categorygame(){
 
 function categoryother(){
 
+  if (document.getElementById("radioname1") != null){
+   document.getElementById("radioname1").remove();
+  }
+  if (document.getElementById("radioname2") != null){
+   document.getElementById("radioname2").remove();
+  }
+
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "none";
-  document.getElementsByClassName("radio")[0].style.display = "none";
-  document.getElementsByClassName("radio")[1].style.display = "none";
+  document.getElementsById("radio1").style.display = "none";
+  document.getElementsById("radio2").style.display = "none";
 
  for (var i = 0; i < ColumnCounts ; i++){
   document.getElementsByClassName('A1')[i].style.display = 'none';
