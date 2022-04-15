@@ -1879,10 +1879,10 @@ function changeCategory() {
 
 //ラジオボタン動作
 function radiocheck(){
- if (document.getElementByName("radio").value == "default"){
+ if (document.getElementById("radio1").checked == true ){
   userList.sort('songtitle', { order: 'asc' });
- } else if (document.getElementByName("radio").value == "streamdate"){
-   userList.sort('date', { order: 'desc' });
+ } else if (document.getElementById("radio2").checked == true ){
+  userList.sort('date', { order: 'desc' });
  }
 }
 
