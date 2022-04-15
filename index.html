@@ -1879,9 +1879,9 @@ function changeCategory() {
 
 //ラジオボタン動作
 function radiocheck(){
- if (document.getElementsByName("radio").value == "default"){
+ if (document.getElementByName("radio").value == "default"){
   userList.sort('songtitle', { order: 'asc' });
- } else if (document.getElementsByName("radio").value == "streamdate"){
+ } else if (document.getElementByName("radio").value == "streamdate"){
    userList.sort('date', { order: 'desc' });
  }
 }
@@ -2157,7 +2157,7 @@ function categorysong(){
   document.getElementById("radio1").style.display = "";
   document.getElementById("radio1").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname1">　曲名順</div>');
   document.getElementById("radio2").style.display = "";
-  document.getElementById("radio2").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname1">　配信日順</div>');
+  document.getElementById("radio2").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname2">　配信日順</div>');
 
 
 
