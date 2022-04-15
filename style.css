@@ -26,14 +26,15 @@ h1#strcolor1{
 }
 
 span#strcolor2{
- color: #de82a7;
- -webkit-text-stroke: 1px #ff1493;  
+ color: #e0218a;
+ -webkit-text-stroke: 0.1px #fff;  
 }
 
 span#strcolor3{
- color: #de82a7;
- -webkit-text-stroke: 1px #ff1493; 
+ color: #e0218a;
+ -webkit-text-stroke: 0.1px #fff;
 }
+
 
 
 
@@ -78,7 +79,7 @@ th.A2{
 
 /*内容*/
 th.A3 {
-   width: 160px;
+   width: 165px;
 }
 
 /*ゲームタイトル*/
