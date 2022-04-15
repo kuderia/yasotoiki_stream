@@ -2111,6 +2111,7 @@ function linehidden(){
 //列調整用
 function categorynon(){
 
+ document.getElementById("radio1").checked = true 
   if (document.getElementById("radioname1") != null){
    document.getElementById("radioname1").remove();
   }
@@ -2145,6 +2146,7 @@ function categorynon(){
 
 function categorysong(){
 
+ document.getElementById("radio1").checked = true 
   if (document.getElementById("radioname1") != null){
    document.getElementById("radioname1").remove();
   }
@@ -2155,7 +2157,7 @@ function categorysong(){
   userList.sort('songtitle', { order: 'asc' });
   document.getElementById("category-second").style.display = "";
   document.getElementById("radio1").style.display = "";
-  document.getElementById("radio1").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname1">　曲名順</div>');
+  document.getElementById("radio1").insertAdjacentHTML("afterbegin", '<span>　曲名順</span>');
   document.getElementById("radio2").style.display = "";
   document.getElementById("radio2").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname2">　配信日順</div>');
 
@@ -2182,6 +2184,7 @@ function categorysong(){
 
 function categoryasmr(){
 
+ document.getElementById("radio1").checked = true 
   if (document.getElementById("radioname1") != null){
    document.getElementById("radioname1").remove();
   }
@@ -2215,6 +2218,7 @@ function categoryasmr(){
 
 function categorygame(){
 
+ document.getElementById("radio1").checked = true 
   if (document.getElementById("radioname1") != null){
    document.getElementById("radioname1").remove();
   }
@@ -2248,18 +2252,19 @@ function categorygame(){
 
 function categoryother(){
 
+ document.getElementById("radio1").checked = true 
   if (document.getElementById("radioname1") != null){
    document.getElementById("radioname1").remove();
   }
   if (document.getElementById("radioname2") != null){
    document.getElementById("radioname2").remove();
   }
-
+ 
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "none";
   document.getElementById("radio1").style.display = "none";
   document.getElementById("radio2").style.display = "none";
-
+ 
  for (var i = 0; i < ColumnCounts ; i++){
   document.getElementsByClassName('A1')[i].style.display = 'none';
   document.getElementsByClassName('A2')[i].style.display = 'none';
