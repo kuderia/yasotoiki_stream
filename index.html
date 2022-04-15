@@ -5077,10 +5077,10 @@ function songsearch(){
  
  if(SearcBoxElement.value != "" || SearcBoxElement.value != null){
   for (var i=0; i<SongCounts; i++){
-   if(SongsearchElements[i].textContent.indexOf(SearcBoxElement.value) == 1){
-    SingElements[i].style.display = "";
-   } else {
+   if(SongsearchElements[i].textContent.indexOf(SearcBoxElement.value) == -1){
     SingElements[i].style.display = "none";
+   } else {
+    SingElements[i].style.display = "";
    }
   }
  } else {
