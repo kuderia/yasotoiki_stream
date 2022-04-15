@@ -5075,7 +5075,7 @@ function songsearch(){
  var SearcBoxElement = document.getElementById("search");
  var SongSearch;
  
- if(SearcBoxElement.value != "" || SearcBoxElemen.value != null){
+ if(SearcBoxElement.value != "" || SearcBoxElement.value != null){
   for (var i=0; i<SongCounts; i++){
    if(SongsearchElements[i].textContent.indexOf(SearcBoxElement.value) == 1){
     SingElements[i].style.display = "";
@@ -5083,9 +5083,13 @@ function songsearch(){
     SingElements[i].style.display = "none";
    }
   }
-  if(checkboxA.checked == true){
-    favcheck();
+ } else {
+  if (category2.value == "non" || category2.selectedIndex == 0){
+   linehidden();
+  } else {
+   changeCategory2();
   }
+  checkboxA.checked = false;
  }
 }
 
