@@ -47,6 +47,21 @@ div#div1{
  
 }
 
+span#radioname1{
+  font-weight:bolder;
+ font-size: medium;
+ color: 000;
+ -webkit-text-stroke: 0.6px #e0218a;
+ 
+}
+
+span#radioname2{
+  font-weight:bolder;
+ font-size: medium;
+ color: 000;
+ -webkit-text-stroke: 0.6px #e0218a;
+ 
+}
 
 
 div#users{
