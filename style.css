@@ -14,7 +14,7 @@
   background-position:center center;
   background-size:100% auto;
   background-repeat: no-repeat;
-  opacity:0.9;  
+  opacity:0.8;  
  }
  
 
@@ -26,15 +26,26 @@ h1#strcolor1{
 }
 
 span#strcolor2{
- color: #e0218a;
- -webkit-text-stroke: 0.1px #fff;  
+ font-weight:bolder;
+  font-size: medium;
+ color: #000000;
+ -webkit-text-stroke: 0.1px #000;  
 }
 
 span#strcolor3{
- color: #e0218a;
- -webkit-text-stroke: 0.1px #fff;
+  font-weight:bolder;
+ font-size: medium;
+ color: #000000;
+ -webkit-text-stroke: 0.1px #000;
 }
 
+div#div1{
+  font-weight:bolder;
+ font-size: medium;
+ color: #e0218a;
+ -webkit-text-stroke: 0.1px #000;
+ 
+}
 
 
 
