@@ -53,6 +53,8 @@
 
    <div id="users">
     <input type ="search" class="search" id="search" placeholder="曲名を入力">
+    　<input type="radio" class="radio" value="default" onclick="radiocheck()" checked>曲名順
+    　<input type="radio" class="radio" value="streamdate"onclick="radiocheck()">配信日順
     
     <table>
      <thead>
@@ -1805,12 +1807,9 @@
 
  //セレクトボックス変更時動作 
  category = document.getElementById("category");
- category.onchange = changeCategory;
+ category.onchange = changeCategory();
  category2 = document.getElementById("category-second");
- category2.onchange = changeCategory2;
-
- //検索欄非表示
- document.getElementById("search").style.display = "none";
+ category2.onchange = changeCategory2();
 
  //行調整
  linehidden();
@@ -1860,28 +1859,27 @@ function changeCategory() {
 
  //列、ソート、セレクトボックス調整
  if(changedCategory == "non"){
-  userList.sort('date', { order: 'desc' });
-  document.getElementById("category-second").style.display = "none";
   categorynon();
  } else if(changedCategory == "sing" ||  changedCategory == "song"){
-  userList.sort('songtitle', { order: 'asc' });
-  document.getElementById("category-second").style.display = "";
   ChangeSelectboxSong();
   categorysong();
  } else if (changedCategory == "ASMR") {
-  userList.sort('date', { order: 'desc' });
-  document.getElementById("category-second").style.display = "";
   ChangeSelectboxASMR();
   categoryasmr();
  } else if (changedCategory == "game") {
-  userList.sort('gametitle', { order: 'desc' });
-  document.getElementById("category-second").style.display = "";
   ChangeSelectboxGame();
   categorygame();
  } else if (changedCategory == "talk" || changedCategory == "exclusive" || changedCategory == "situation"){
-  userList.sort('date', { order: 'desc' });
-  document.getElementById("category-second").style.display = "none";
   categoryother();
+ }
+}
+
+//ラジオボタン動作
+function radiocheck(){
+ if (document.getElementsClassName("radio").value == "default"){
+  userList.sort('songtitle', { order: 'asc' });
+ } else if (document.getElementsClassName("radio").value == "streamdate"){
+   userList.sort('date', { order: 'desc' });
  }
 }
 
@@ -1889,8 +1887,6 @@ function changeCategory() {
 //選択解除
 function genrereset(){
  category.selectedIndex=0;
- userList.sort('date', { order: 'desc' });
- document.getElementById("category-second").style.display = "none";
  categorynon();
  linehidden();
  if (document.getElementById("div1") != null){
@@ -1901,7 +1897,7 @@ function genrereset(){
 }
 
 
- //セレクトボックス(2)表示内容変更
+//セレクトボックス(2)表示内容変更
 function ChangeSelectboxSong() {
 
  category2.textContent = null;
@@ -2111,6 +2107,12 @@ function linehidden(){
 
 //列調整用
 function categorynon(){
+
+  userList.sort('date', { order: 'desc' });
+  document.getElementById("category-second").style.display = "none";
+  document.getElementsClassName("radio").style.display = "none";
+
+
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
    document.getElementsByClassName('A1')[i].style.display = '';
@@ -2131,6 +2133,11 @@ function categorynon(){
 }
 
 function categorysong(){
+
+  userList.sort('songtitle', { order: 'asc' });
+  document.getElementById("category-second").style.display = "";
+  document.getElementsClassName("radio").style.display = "";
+
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
    document.getElementsByClassName('A1')[i].style.display = 'none';
@@ -2151,6 +2158,11 @@ function categorysong(){
 }
 
 function categoryasmr(){
+
+  userList.sort('date', { order: 'desc' });
+  document.getElementById("category-second").style.display = "";
+  document.getElementsClassName("radio").style.display = "none";
+
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
    document.getElementsByClassName('A1')[i].style.display = 'none';
@@ -2171,6 +2183,11 @@ function categoryasmr(){
 }
 
 function categorygame(){
+
+  userList.sort('gametitle', { order: 'desc' });
+  document.getElementById("category-second").style.display = "";
+  document.getElementsClassName("radio").style.display = "none";
+
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
    document.getElementsByClassName('A1')[i].style.display = 'none';
@@ -2191,6 +2208,11 @@ function categorygame(){
 }
 
 function categoryother(){
+
+  userList.sort('date', { order: 'desc' });
+  document.getElementById("category-second").style.display = "none";
+  document.getElementsClassName("radio").style.display = "none";
+
  for (var i = 0; i < ColumnCounts ; i++){
   document.getElementsByClassName('A1')[i].style.display = 'none';
   document.getElementsByClassName('A2')[i].style.display = 'none';
