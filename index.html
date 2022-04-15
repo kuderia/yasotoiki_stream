@@ -53,8 +53,8 @@
 
    <div id="users">
     <input type ="search" class="search" id="search" placeholder="曲名を入力">
-    　<input type="radio" name="radio" id="radio1" value="default" onclick="radiocheck()" checked>
-    　<input type="radio" name="radio" id="radio2" value="streamdate" onclick="radiocheck()">
+    　<span id="radiotitle1"><input type="radio" name="radio" id="radio1" onclick="radiocheck()" checked></span>
+    　<span id="radiotitle2"><input type="radio" name="radio" id="radio2" onclick="radiocheck()"></span>
     
     <table>
      <thead>
@@ -2157,9 +2157,9 @@ function categorysong(){
   userList.sort('songtitle', { order: 'asc' });
   document.getElementById("category-second").style.display = "";
   document.getElementById("radio1").style.display = "";
-  document.getElementById("radio1").insertAdjacentHTML("afterbegin", '<span>　曲名順</span>');
+  document.getElementById("radiotitle1").insertAdjacentHTML("beforend", '<span id="radioname1">　曲名順</span>');
   document.getElementById("radio2").style.display = "";
-  document.getElementById("radio2").insertAdjacentHTML("afterbegin", '<div style="display: inline-block; _display: inline;" id="radioname2">　配信日順</div>');
+  document.getElementById("radiotitle2").insertAdjacentHTML("beforend", '<span id="radioname2">　配信日順</span>');
 
 
 
