@@ -7,7 +7,6 @@
  }
 
  div.fav{
-  font-family:"Yu Gothic"; 
   margin:0;
   padding:0;
   background-image:url('/image.jpg');
@@ -19,6 +18,7 @@
  
 
 h1#strcolor1{
+ font-family:"Yu Gothic"; 
  margin:0;
  padding:0;
  color: #e0218a;
@@ -29,21 +29,21 @@ span#strcolor2{
  font-weight:bolder;
   font-size: medium;
  color: #000000;
- -webkit-text-stroke: 0.1px #000;  
+ -webkit-text-stroke: 0.6px #e0218a;  
 }
 
 span#strcolor3{
   font-weight:bolder;
  font-size: medium;
- color: #000000;
- -webkit-text-stroke: 0.1px #000;
+ color: #000;
+ -webkit-text-stroke: 0.6px #e0218a;
 }
 
 div#div1{
   font-weight:bolder;
  font-size: medium;
- color: #e0218a;
- -webkit-text-stroke: 0.1px #000;
+ color: 000;
+ -webkit-text-stroke: 0.6px #e0218a;
  
 }
 
