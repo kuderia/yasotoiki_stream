@@ -53,8 +53,8 @@
 
    <div id="users">
     <input type ="search" class="search" id="search" placeholder="曲名を入力">
-    　<input type="radio" id="radio1" value="default" onclick="radiocheck()" checked>
-    　<input type="radio" id="radio2" value="streamdate"onclick="radiocheck()">
+    　<input type="radio" name="radio" id="radio1" value="default" onclick="radiocheck()" checked>
+    　<input type="radio" name="radio" id="radio2" value="streamdate" onclick="radiocheck()">
     
     <table>
      <thead>
@@ -1879,9 +1879,9 @@ function changeCategory() {
 
 //ラジオボタン動作
 function radiocheck(){
- if (document.getElementsClassName("radio").value == "default"){
+ if (document.getElementsByName("radio").value == "default"){
   userList.sort('songtitle', { order: 'asc' });
- } else if (document.getElementsClassName("radio").value == "streamdate"){
+ } else if (document.getElementsByName("radio").value == "streamdate"){
    userList.sort('date', { order: 'desc' });
  }
 }
