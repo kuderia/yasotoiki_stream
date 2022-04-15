@@ -2110,7 +2110,7 @@ function categorynon(){
 
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "none";
-  document.getElementsClassName("radio").style.display = "none";
+  document.getElementsByClassName("radio").style.display = "none";
 
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
@@ -2136,7 +2136,7 @@ function categorysong(){
 
   userList.sort('songtitle', { order: 'asc' });
   document.getElementById("category-second").style.display = "";
-  document.getElementsClassName("radio").style.display = "";
+  document.getElementsByClassName("radio").style.display = "";
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
@@ -2161,7 +2161,7 @@ function categoryasmr(){
 
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "";
-  document.getElementsClassName("radio").style.display = "none";
+  document.getElementsByClassName("radio").style.display = "none";
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
@@ -2186,7 +2186,7 @@ function categorygame(){
 
   userList.sort('gametitle', { order: 'desc' });
   document.getElementById("category-second").style.display = "";
-  document.getElementsClassName("radio").style.display = "none";
+  document.getElementsByClassName("radio").style.display = "none";
 
  if (window.matchMedia && window.matchMedia('(min-device-width: 480px)').matches) {
   for (var i = 0; i < ColumnCounts ; i++){
@@ -2211,7 +2211,7 @@ function categoryother(){
 
   userList.sort('date', { order: 'desc' });
   document.getElementById("category-second").style.display = "none";
-  document.getElementsClassName("radio").style.display = "none";
+  document.getElementsByClassName("radio").style.display = "none";
 
  for (var i = 0; i < ColumnCounts ; i++){
   document.getElementsByClassName('A1')[i].style.display = 'none';
