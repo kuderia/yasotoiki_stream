@@ -5069,22 +5069,23 @@ function favremove(){
 //曲検索用
 function songsearch(){
 
-var SingElements = document.getElementsByClassName("sing");
-var SongsearchElements = document.getElementsByClassName("songsearch");
-var SongCounts = SongsearchElements.length;
-var SearcBoxElement = document.getElementById("search");
-var SongSearch;
-
-if(searchbox.value != "" || searchbox.value != null){
- for (var i=0; i<SongCounts; i++){
-  if(SongsearchElements[i].textContent.indexOf(SearcBoxElement.value) == 1){
-   SingElements[i].style.display = "";
-  } else {
-   SingElements[i].style.display = "none";
+ var SingElements = document.getElementsByClassName("sing");
+ var SongsearchElements = document.getElementsByClassName("songsearch");
+ var SongCounts = SongsearchElements.length;
+ var SearcBoxElement = document.getElementById("search");
+ var SongSearch;
+ 
+ if(searchbox.value != "" || searchbox.value != null){
+  for (var i=0; i<SongCounts; i++){
+   if(SongsearchElements[i].textContent.indexOf(SearcBoxElement.value) == 1){
+    SingElements[i].style.display = "";
+   } else {
+    SingElements[i].style.display = "none";
+   }
   }
- }
- if(checkboxA.checked == true){
-   favcheck();
+  if(checkboxA.checked == true){
+    favcheck();
+  }
  }
 }
 
