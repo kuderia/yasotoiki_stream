@@ -5976,7 +5976,7 @@ function favcheck(){
   FavElements = CheckboxElements[i];
   Favid = FavElements.getAttribute("id");
   FavLoad = JSON.parse(localStorage.getItem(Favid));
-  if (FavLoad == false) {
+  if (FavLoad !== true) {
    document.getElementById("B"+Favid).style.display="none";
   }
  }
