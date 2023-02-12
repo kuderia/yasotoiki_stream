@@ -29,38 +29,27 @@ span#strcolor2{
  font-weight:bolder;
   font-size: medium;
  color: #000000;
- -webkit-text-stroke: 0.6px #e0218a;
+ -webkit-text-stroke: 0.7px #e0218a;
 }
 
-span#strcolor3{
-  font-weight:bolder;
- font-size: medium;
- color: #000;
- -webkit-text-stroke: 0.6px #e0218a;
+#category-title{
+vertical-align: -8px
 }
 
-div#div1{
-  font-weight:bolder;
- font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
-
+#category-second-title{
+vertical-align: -8px;
 }
 
-span#radioname1{
-  font-weight:bolder;
- font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
-
+#search{
+  width: 100px;
 }
 
-span#radioname2{
-  font-weight:bolder;
- font-size: medium;
- color: 000;
- -webkit-text-stroke: 0.6px #e0218a;
+select#category{
+ width: 100px;
+}
 
+select#category-second{
+ width: 100px;
 }
 
 
@@ -82,7 +71,7 @@ th,td {
     border: solid 1px;   /* 枠線指定 */
 }
 
-.gametitle{
+.singer{
  overflow:hidden;
  text-overflow: ellipsis;
  white-space: nowrap;
@@ -98,31 +87,31 @@ th.A0{
   width:15px;
 }
 
-/*ジャンル*/
-th.A1 {
-  width: 110px;
-}
-
 /*曲名*/
+th.A1 {
+ width: 210px;
+}
+
+/*歌手名*/
 th.A2{
-  width: 200px;
-}
-
-
-/*内容*/
-th.A3 {
-   width: 165px;
-}
-
-/*ゲームタイトル*/
-th.A4 {
-  width: 160px;
+ width: 155px;
 }
 
 
 /*配信日*/
+th.A3 {
+  width: 80px;
+}
+
+/*配信タイトル*/
+th.A4 {
+
+}
+
+
+/*カウント*/
 th.A5 {
-   width: 75px;
+  width: 15px;
 }
 
 
